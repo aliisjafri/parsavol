@@ -9,12 +9,12 @@
 			var vm = this; // instantiates the context of the controller using this
 
 			vm.robo = {
-				name:"Robert"
+				 name:"Robert"
 				,address:"515 North Alberta"
 			};
 			vm.nomo ={
-				name:"Nancy"
-				, address: "323 West Slauson"
+				 name:"Nancy"
+				,address: "323 West Slauson"
 			};
 
 			vm.$onInit = _$onInit;

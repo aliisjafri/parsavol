@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Boiler Plate</title>
+	<title> Custom Directive</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
@@ -10,15 +10,37 @@
 	<script src="app.js"></script>
 	<script src="appController.js"></script>
 	<script src="appDirective.js"></script>
+	<style>
+		body {
+	    background-image: linear-gradient(-41deg, #4CA1AF 0%, #c2e59c 100%);
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-orient: vertical;
+	    -webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	    flex-direction: column;
+	    -webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    min-height: 100vh;
+	}
+</style>
 </head>
 <body>
-	<h1 class="jumbotron"> John Papa Directive </h1>
+	<div class="container">
+		<h1 class="display-2 text-center my-4 rounded"> John Papa Style Directive</h1>
+		<hr>
 	<div ng-app="myApp">
 		<div ng-controller="MyController as ctrlVm">
 			<my-directive info="ctrlVm.robo"></my-directive>
-			<hr>
+			<br>
 			<my-directive info="ctrlVm.nomo"></my-directive>
 		</div>
 	</div>
+</div>
 </body>
 </html>
