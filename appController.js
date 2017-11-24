@@ -16,8 +16,12 @@
 				 name:"Nancy"
 				,address: "323 West Slauson"
 			};
-
+			vm.romo ={
+				 name:"Tony"
+				,address: "009 South Dallas"
+			};
 			vm.$onInit = _$onInit;
+
 			function _$onInit(){
 				console.log("Init first");
 			}
